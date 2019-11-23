@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do</title>
+  <link rel="stylesheet" type="text/css" href="todoo.css">
+</head>
+<body>
+	<div class="div1">
+<h1><font><u>To Do List</u></font></h1>
+	<input class="text" type="text" id="RemoveName" placeholder="Enter Task Here">
+	<input id="btn" class="b1" type="Button" value="Create"  name="">
+	<input id="btn1" class="b1" type="Button"  value="Remove">
+	<p id="demo" >
+    <ul id="list" type="none";>
+  	</ul></div>
+	<script type="text/javascript">
+    var z=document.getElementById('btn');
+    console.log(z);
+    z.addEventListener('click',Insert);
+		function Insert() {
+			var a =document.getElementById("RemoveName").value;
+		var para=document.createElement("li");
+		var node=document.createTextNode(a);
+		para.appendChild(node);
+		para.id=a;
+		var element =document.getElementById('list');
+		element.appendChild(para);
+    document.getElementById("RemoveName").value="";
+		}
+	</script>
+</body>
+</html>
